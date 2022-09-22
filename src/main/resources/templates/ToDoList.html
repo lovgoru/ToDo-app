@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org", lang="hr">
+<head>
+  <title>TO DO APP</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" th:href="@{/allStyle.css}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+  <h1>TO DO APLIKACIJA</h1>
+</header>
+<nav>
+  <ul>
+    <li><a class="nav" href="/home">Početna stranica</a></li>
+    <li><a class="nav" href="/add-todo">Dodaj aktivnost</a>
+    <li><a class="nav" href="/list-of-todos">Lista aktivnosti</a></li>
+  </ul>
+  <a class="logoutBtn" href="/logout">Odjava</a>
+</nav>
+<article>
+  <section class="section">
+    <table>
+      <tr>
+        <td class="cellFirstRow">Datum</td>
+        <td class="cellFirstRow">Aktivnost</td>
+        <td class="cellFirstRow">Brisanje</td>
+      </tr>
+      <tr th:each="ToDo: ${ToDos}">
+        <td class="cellOders" th:text="${ToDo.date}"></td>
+        <td class="cellOders" th:text="${ToDo.description}"></td>
+        <td class="cellDelete">
+          <a onclick="return confirm('Jeste li sigurni da želite obrisati ovu aktivnost?')"
+             th:href="@{'/list-of-todos/delete/'+${ToDo.id}}">Obriši</a>
+        </td>
+      </tr>
+    </table>
+  </section>
+</article>
+<footer>Datum posljednje promjene: 2022-09-17</footer>
+</body>
+</html>

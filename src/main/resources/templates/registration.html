@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="hr">
+<head>
+    <title>TO DO APP</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/allStyle.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <h1>TO DO APLIKACIJA</h1>
+</header>
+<nav>
+    <ul>
+        <li><a class="nav" href="/">Početna stranica</a></li>
+        <li><a class="nav" href="/add-todo">Dodaj aktivnost</a>
+        <li><a class="nav" href="/list-of-todos">Lista aktivnosti</a></li>
+        <li><a class="nav" href="/login">Prijava</a></li>
+    </ul>
+</nav>
+<article>
+    <div class="formDiv">
+        <form th:action="@{/register-process}" th:object="${user}" method="post">
+            <h2>Registracija</h2>
+
+            <p>
+                <label>Korisničko ime: </label>
+                <input type="text" th:field="*{username}" required autofocus/>
+            </p>
+
+            <p>
+                <label>Lozinka: </label>
+                <input type="password" th:field="*{password}" required/>
+            </p>
+
+            <button type="submit">Registriraj se</button>
+        </form>
+    </div>
+</article>
+<footer>Datum posljednje promjene: 2022-09-17</footer>
+</body>
+</html>

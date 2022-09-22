@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org", lang="hr">
+<head>
+  <title>TO DO APP</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" th:href="@{/allStyle.css}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+  <h1>TO DO APLIKACIJA</h1>
+</header>
+<nav>
+  <ul>
+    <li><a class="nav" href="/home">Početna stranica</a></li>
+    <li><a class="nav" href="/add-todo">Dodaj aktivnost</a>
+    <li><a class="nav" href="/list-of-todos">Lista aktivnosti</a></li>
+  </ul>
+  <a class="logoutBtn" href="/logout">Odjava</a>
+</nav>
+<article>
+  <h3 class="titleHome">O korištenju stranice</h3>
+  <p>
+    Aplikacija pruža mogućnost pravljenja liste željenih aktivnosti za određene datume.
+  </p>
+  <p>
+    Odabirom kartice <i>Dodaj aktivnost</i> u navigacijskom izborniku, dolazi se do stranice u
+    kojoj se odabiru datum i kratki opis
+    željenje aktivnosti. Klikom na <i>Pošalji</i> aktivnost se pohranjuje.
+  </p>
+  <p>
+    Klikom na karticu <i>Lista aktivnosti</i> prikažu se sve prethodno pohranjene aktivnosti. Klikom na
+    <i>Obriši</i> pored željene aktivnosti, aktivnost se trajno briše.
+  </p>
+  <p>
+    <strong>VAŽNO!</strong> Da bi se koristile kartice <i>Dodaj aktivnost</i> i <i>Lista aktivnosti</i> potrebno je
+    najprije prijaviti se te će se korisnika koji je kliknuo na jednu od njih bez prijave automatski prebaciti na
+    stranicu prijave. Međutim, na stranicu prijave može se stići i direktno klikom na karticu <i>Prijava</i>.
+    Nakon prijave korištenje usluga je omogućeno sve dok se ne klikne na gumb <i>Odjava</i> koji će se od trenutka
+    prijave nalaziti u gornjem desnom kutu.
+  </p>
+  <p>
+    Za prvu prijavu u aplikaciju potrebni su korisničko ime i lozinka koji se kreiraju pri registraciji. Stranici
+    registracije pristupa se direktno klikom na link <i>Registracija</i> koji se nalazi na stranici prijave.
+  </p>
+</article>
+<footer>Datum posljednje promjene: 2022-09-17</footer>
+</body>
+</html>

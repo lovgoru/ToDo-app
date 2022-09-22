@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 125%;
+    background-image: url('background.jpg');
+}
+
+header{
+    background-color: #09b551;
+    color: white;
+    text-align: center;
+    padding: 75px;
+    font-size: 5vw;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+.nav{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: #09b551;
+    border-style: solid;
+    border-color: white;
+    padding : 10px;
+}
+
+li a:hover{
+    background-color: #9dfac4;
+}
+
+article{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer{
+  background-color: #09b551;
+  text-align: center;
+  color: white;
+  margin-top: 300px;
+}
+
+.formDiv{
+    color: #09b551;
+    border: 5px solid #09b551;
+    padding: 25px;
+    width: 50%;
+    margin: auto;
+    margin-top: 150px;
+}
+p{
+    margin-top: 25px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.cellFirstRow{
+    background-color: #09b551;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border: 3px solid #09b551;
+}
+
+.cellOders{
+    color: #09b551;
+    text-align: center;
+    padding: 5px;
+    border: 3px solid #09b551;
+}
+
+.cellDelete{
+    background-color: #ba0b0b;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+    border: 3px solid #09b551;
+}
+
+a, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+
+.logoutBtn{
+    float: right;
+    background-color: #ba0b0b;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid white;
+    color: white;
+}
+
+.logoutBtn, .logoutBtn:focus, .logoutBtn:active{
+    text-decoration: none;
+}
+
+.logoutBtn:hover{
+    background-color: #f74f58;
+}
+
+.divReg{
+    margin: auto;
+    width: 60%;
+    color: #09b551;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.regBtn{
+    color: black;
+}
+
+.linkBack{
+    color: black;
+}
+
+.img{
+    max-height: 20%;
+    max-width: 20%;
+}
+
+.titleHome{
+    margin-top: 150px;
+}
+
+.section{
+    margin-top: 150px;
+}
